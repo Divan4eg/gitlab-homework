@@ -56,15 +56,25 @@
 6. 
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  image: golang:1.17
+  script: 
+   - go test .
+
+build:
+  stage: build
+  image: docker:latest
+  script:
+   - docker build .
+
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
-
+Все сборки падают вот с такой ошибкой, как будто в конце ссылки на репо добавлен лишний /
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/2-1.png)
 
 ---
