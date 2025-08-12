@@ -46,8 +46,6 @@
 
 ### Решение 2
 
-`Приведите ответ в свободной форме........`
-
 1. Репозиторий склонировал себе на локальный Gitlab
 2. Создал раннер к этому проекту, запустил его
 3. Создал .gitlab-ci.yml, код ниже.
@@ -75,4 +73,15 @@ build:
 Все сборки падают вот с такой ошибкой, как будто в конце ссылки на репо добавлен лишний /
 ![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/2-1.png)
 
----
+Что я делал чтобы это победить:
+1. Прописал все в /etc/hosts
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/3-0.png)
+2. Gitlab доступен аж по 4 ссылкам (раннеры регистрировал на все, всех скриншотов не сохранил)
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/3-1.png)
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/3-2.png)
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/3-3.png)
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/3-4.png)
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/3-5.png)
+3. Я создавал новый проект, в настройках явно стоит ссылка не на localhost, а по итогу ссылка на проект все равно содержит localhost. Честно уже нет вариантов как это победить кроме переустановки Гитлаба с нуля или создании его в облаке(в вопросах/ответах ктото так делал)
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/4-1.png)
+![.alt text](https://github.com/Divan4eg/gitlab-homework/blob/main/img/4-2.png)
